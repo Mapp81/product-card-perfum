@@ -1,0 +1,194 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 53%;
+
+}
+
+.box-img{
+    display: flex;
+    height: 450px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+img{
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.box-letters{
+    display: flex;
+    height: 450px;
+    width: 300px;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 0;
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+
+h1{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0% 10% 0% 10%;
+    
+}
+
+h3{
+    color:  hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 3px;
+    padding: 0% 10% 0% 10%;
+    margin: 0;
+}
+
+p{
+    padding: 0% 10% 0% 10%;
+    color: hsl(212, 21%, 14%);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    padding: 0% 10% 0% 10%;
+}
+
+.prices > div:first-child {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.prices > div:nth-child(2) {
+    color: hsl(212, 21%, 14%);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+.container-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 10% 10% 0% 10%;
+    
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    border: none;
+    width: 100%;    
+    height: 200%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+}
+
+@media screen and (max-width: 1300px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 53%;
+    
+    }
+
+    .box-img{
+        display: flex;
+        height: 300px;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url('image-product-mobile.jpg');
+        background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+        background-position: center; /* Centra la imagen en el contenedor */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        
+    }
+
+    img{
+        display: none;
+              
+    }
+
+    .box-letters{
+        display: flex;
+        height: 400px;
+        width: 400px;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        margin: 0;
+        padding-top: 0;
+        background-color: hsl(0, 0%, 100%);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
+
+.attribution{
+    display: none;
+}
